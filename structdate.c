@@ -53,7 +53,7 @@ printf("The date of D2 is % 2d % 2d % 2d \n",D2.dd,D2.mm,D2.yyyy);
 ydiff = D1.yyyy - D2.yyyy;
 x= ydiff * 360;
 total += 30 - D1.dd;
-total = D1.dd + D2.mm * 30;
+total += D1.dd + D2.mm * 30;
 total += D2.dd;
 
 int elap = (360 - total) + x;
