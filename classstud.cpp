@@ -9,7 +9,7 @@ class student
     char name[100];
     char course[100];
     int marks[5];
-    int total;
+    float total;
 
     public:
     int getdetails();
@@ -51,7 +51,8 @@ int student ::display()
     cout<<"\n The marks of"<<i<<"Subject ="<<marks[i];
     }
     cout<<" \n Total marks ="<<total;
-    cout<<"\n Percentage ="<< percentage();
+    cout<<"\n Percentage ="<< percentage()<<"%";
+    // cout<<"\n Percentage "<<total/500 * 100;
 
 
 }
