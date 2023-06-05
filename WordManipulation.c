@@ -36,17 +36,17 @@ for(i=0;i<length;i++)
     }
 }
 printf("The no. of Vowels in the string is %d \n",vowel);
-char newstr[100];
+// char newstr[100];
+int pun;
 for(i=0,j=0;str[i]!='\0';i++)
 {
-    if(str[i]>='a' || str[i]>='A' && str[i]<='z' || str[i]<='Z')
+     if(str[i] == '!' || str[i] == ',' || str[i] == ';' || str[i] == '.' || str[i] == '?' ||   
+       str[i] == '-' || str[i] == '\'' || str[i] == '\"' || str[i] == ':')
     {
-       newstr[j] = str[i];
-       j++;
+       pun++;
     }
 }
-newstr[j] = '\0';
-int pun = length - strlen(newstr);
+// newstr[j] = '\0';
 printf("The no. of Punctuations in the string is %d \n",pun);
 return 0;
 }
