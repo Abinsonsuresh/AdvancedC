@@ -37,7 +37,7 @@ for(i=0;i<length;i++)
 }
 printf("The no. of Vowels in the string is %d \n",vowel);
 // char newstr[100];
-int pun;
+int pun=0;
 for(i=0,j=0;str[i]!='\0';i++)
 {
      if(str[i] == '!' || str[i] == ',' || str[i] == ';' || str[i] == '.' || str[i] == '?' ||   
