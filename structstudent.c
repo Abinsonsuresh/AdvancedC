@@ -16,7 +16,7 @@ int Display(struct student stud[])
     int i;
     for(i=0;i<5;i++)
     {
-    printf("<--------------------------<<<<Student %d>>>>--------------------------> \n",i);
+    printf("<-------------------------<<<<Student %d>>>>-------------------------> \n",i);
     printf("Name: \n");
     puts(stud[i].name);
     printf("Adress: \n");
